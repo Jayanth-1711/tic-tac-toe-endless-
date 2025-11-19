@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f6f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+      margin: 0 auto;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background: white;
+      border: 2px solid #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.5s;
+    }
+    .light{
+      color: grey !important;
+    }
+    .cell:hover {
+      background: #eaeaea;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="board">
+      <div class="cell cell-1"></div>
+      <div class="cell cell-2"></div>
+      <div class="cell cell-3"></div>
+      <div class="cell cell-4"></div>
+      <div class="cell cell-5"></div>
+      <div class="cell cell-6"></div>
+      <div class="cell cell-7"></div>
+      <div class="cell cell-8"></div>
+      <div class="cell cell-9"></div>
+    </div>
+  </div>
+   <script src="main.js"></script>
+</body>
+</html>
